@@ -1,4 +1,17 @@
+#area{
+  position: relative;
+  left: 30%;
+}
+
+fieldset{
+  width:500px;
+}
+
 /*Espaçamento entre os campo input*/
 .form_input{
-    margin-bottom: 5px;
+    position:relative;
+    margin-top: 10px;
+}
+#email{
+  margin-left: 25px;
 }

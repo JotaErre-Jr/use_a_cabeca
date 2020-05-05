@@ -60,20 +60,22 @@
     }
     if ($output_form) {
     ?>
-    <fieldset>
-    <legend>Ultilize o formulário para receber nossas ofertas</legend>
-    <form class="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-      <label for="first_name">First Name:</label>
-      <input class="form_input" type="text" name="first_name" value="<?php echo $first_name; ?>"><br/>
-      <label for="last_name">Last Name:</label>
-      <input class="form_input" type="text" name="last_name" value="<?php echo $last_name; ?>"><br/>
-      <label for="email">E-mail</label>
-      <input class="form_input" type="text" name="e_mail" value="<?php echo $e_mail; ?>"><br/>
+    <div id="area" class="">
+      <fieldset>
+      <legend>Ultilize o formulário para receber nossas ofertas</legend>
+      <form class="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="first_name">First Name:</label>
+        <input class="form_input" type="text" name="first_name" value="<?php echo $first_name; ?>"><br/>
+        <label for="last_name">Last Name:</label>
+        <input class="form_input" type="text" name="last_name" value="<?php echo $last_name; ?>"><br/>
+        <label for="email">E-mail:</label>
+        <input class="form_input" id="email" type="text" name="e_mail" value="<?php echo $e_mail; ?>"><br/>
 
-      <input type="submit" name="submit" value="Enviar">
+        <input type="submit" name="submit" value="Enviar">
 
-    </form>
-    </fieldset>
+      </form>
+      </fieldset>
+    </div>
     <?php
     }
     ?>
